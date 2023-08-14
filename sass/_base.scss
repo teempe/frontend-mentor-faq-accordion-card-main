@@ -1,0 +1,55 @@
+:root {
+    --color-very-dark-desaturated-blue: #1E1F36;
+    --color-soft-red: #F47B56;
+    --color-very-dark-grayish-blue: #4B4C5F;
+    --color-dark-grayish-blue: #787887;
+    --color-light-grayish-blue: #E8E8EA;
+    --color-white: #FFF;
+
+    --color-shadow: #1E1F3680;
+
+    // Background gradient:
+    --color-soft-violet: #B068E9;
+    --color-soft-blue: #6463E7;
+    --bg-gradient: linear-gradient(var(--color-soft-violet), var(--color-soft-blue));
+
+    --ff-base: 'Kumbh Sans', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --max-content-width-mobile: 32.7rem;
+    --max-content-width-desktop: 92rem;
+}
+
+$bp-desktop: 90em; // 1440px
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--bg-gradient);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+// Utils
+.visible {
+    visibility: visible;
+}
+
+// used visibility property to hide content from screenreaders when collapsed
+.not-visible {
+    visibility: hidden;
+}
